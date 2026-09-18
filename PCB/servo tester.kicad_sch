@@ -5,9 +5,12 @@
 	(uuid "83297660-975c-4234-8058-51e6fbb67663")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R_Potentiometer"
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016)
+				(offset 0.762)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -15,8 +18,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,8 +28,8 @@
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -36,7 +39,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -47,6 +50,17 @@
 				)
 			)
 			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -57,7 +71,7 @@
 					)
 				)
 			)
-			(property "Description" "Potentiometer"
+			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -68,7 +82,7 @@
 					)
 				)
 			)
-			(property "Sim.Device" "R"
+			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -79,78 +93,10 @@
 					)
 				)
 			)
-			(property "Sim.Type" "POT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "resistor variable"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
 					(stroke
 						(width 0)
 						(type default)
@@ -160,10 +106,10 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_1_1"
+			(symbol "TestPoint_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
+					(at 0 0 90)
+					(length 2.54)
 					(name "1"
 						(effects
 							(font
@@ -172,42 +118,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -386,7 +296,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MCU_Module:Arduino_UNO_R2"
+		(symbol "MCU_Module:Arduino_Nano_v3.x"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -403,8 +313,8 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "Arduino_UNO_R2"
-				(at 5.08 -26.67 0)
+			(property "Value" "Arduino_Nano_v3.x"
+				(at 5.08 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -414,7 +324,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "Module:Arduino_UNO_R2"
+			(property "Footprint" "Module:Arduino_Nano"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -426,7 +336,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.arduino.cc/en/Main/arduinoBoardUno"
+			(property "Datasheet" "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -437,7 +347,7 @@
 					)
 				)
 			)
-			(property "Description" "Arduino UNO Microcontroller Module, release 2"
+			(property "Description" "Arduino Nano v3.x"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -448,7 +358,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Arduino UNO R3 Microcontroller Module Atmel AVR USB"
+			(property "ki_keywords" "Arduino nano microcontroller module USB"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -459,7 +369,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Arduino*UNO*R2*"
+			(property "ki_fp_filters" "Arduino*Nano*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -470,10 +380,10 @@
 					)
 				)
 			)
-			(symbol "Arduino_UNO_R2_0_1"
+			(symbol "Arduino_Nano_v3.x_0_1"
 				(rectangle
 					(start -10.16 22.86)
-					(end 10.16 -25.4)
+					(end 10.16 -22.86)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -483,12 +393,11 @@
 					)
 				)
 			)
-			(symbol "Arduino_UNO_R2_1_1"
-				(pin no_connect line
-					(at -10.16 -20.32 0)
+			(symbol "Arduino_Nano_v3.x_1_1"
+				(pin bidirectional line
+					(at -12.7 12.7 0)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "D1/TX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -496,240 +405,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 10.16 180)
-					(length 2.54)
-					(name "IOREF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 15.24 180)
-					(length 2.54)
-					(name "~{RESET}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 2.54 25.4 270)
-					(length 2.54)
-					(name "3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 5.08 25.4 270)
-					(length 2.54)
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -27.94 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -27.94 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 25.4 270)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "A0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -7.62 180)
-					(length 2.54)
-					(name "A3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "SDA/A4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -12.7 180)
-					(length 2.54)
-					(name "SCL/A5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -747,7 +422,7 @@
 							)
 						)
 					)
-					(number "15"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -755,17 +430,35 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 12.7 0)
+				(pin input line
+					(at 12.7 12.7 180)
 					(length 2.54)
-					(name "D1/TX"
+					(name "~{RESET}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "16"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -25.4 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -783,7 +476,7 @@
 							)
 						)
 					)
-					(number "17"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -801,7 +494,7 @@
 							)
 						)
 					)
-					(number "18"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -819,7 +512,7 @@
 							)
 						)
 					)
-					(number "19"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -837,7 +530,7 @@
 							)
 						)
 					)
-					(number "20"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -855,7 +548,7 @@
 							)
 						)
 					)
-					(number "21"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -873,7 +566,7 @@
 							)
 						)
 					)
-					(number "22"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -891,7 +584,7 @@
 							)
 						)
 					)
-					(number "23"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -909,7 +602,7 @@
 							)
 						)
 					)
-					(number "24"
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -927,7 +620,7 @@
 							)
 						)
 					)
-					(number "25"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -945,7 +638,7 @@
 							)
 						)
 					)
-					(number "26"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -963,7 +656,7 @@
 							)
 						)
 					)
-					(number "27"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -981,6 +674,222 @@
 							)
 						)
 					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 2.54 25.4 270)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "AREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -12.7 180)
+					(length 2.54)
+					(name "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -15.24 180)
+					(length 2.54)
+					(name "A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -17.78 180)
+					(length 2.54)
+					(name "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 5.08 25.4 270)
+					(length 2.54)
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 15.24 180)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "28"
 						(effects
 							(font
@@ -990,7 +899,7 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 -27.94 90)
+					(at 2.54 -25.4 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1007,10 +916,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 12.7 5.08 180)
+				(pin power_in line
+					(at -2.54 25.4 270)
 					(length 2.54)
-					(name "AREF"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1192,145 +1101,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1448,194 +1218,160 @@
 		)
 	)
 	(junction
-		(at 104.14 55.88)
+		(at 118.11 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "83a64d24-ac41-4a26-bf05-88959ebd18be")
+		(uuid "021bb147-3529-4651-bfe9-5590cc50e6c3")
+	)
+	(junction
+		(at 115.57 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cef52ba3-c963-4759-993a-94b4be925bba")
 	)
 	(wire
 		(pts
-			(xy 128.27 82.55) (xy 119.38 82.55)
+			(xy 87.63 71.12) (xy 87.63 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f925c71-d669-48c6-a175-5b42eae27f3d")
+		(uuid "09711a57-77f7-463a-9d46-28848c435733")
 	)
 	(wire
 		(pts
-			(xy 132.08 97.79) (xy 132.08 95.25)
+			(xy 87.63 73.66) (xy 102.87 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5348d848-44be-467a-bbd0-b4937ac96ee4")
+		(uuid "0aead813-936a-4e31-aa10-9aa1ee8c9a40")
 	)
 	(wire
 		(pts
-			(xy 119.38 92.71) (xy 132.08 92.71)
+			(xy 128.27 92.71) (xy 128.27 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56fab304-f8fb-46a1-990f-1be87ea135bd")
+		(uuid "14d36afb-4a34-4818-9ca9-32b6a6296e64")
 	)
 	(wire
 		(pts
-			(xy 82.55 72.39) (xy 93.98 72.39)
+			(xy 120.65 49.53) (xy 199.39 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "69414c0f-dd1e-48ab-91b4-6085210ce072")
+		(uuid "27c80c12-f7d6-4806-86f5-1d566a5a899b")
 	)
 	(wire
 		(pts
-			(xy 104.14 57.15) (xy 104.14 55.88)
+			(xy 97.79 81.28) (xy 102.87 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82c28377-9da1-4ee4-b77c-156ae811ed63")
+		(uuid "39faeace-d558-4a42-8058-a16dd26c4a6a")
 	)
 	(wire
 		(pts
-			(xy 74.93 90.17) (xy 86.36 90.17)
+			(xy 120.65 53.34) (xy 120.65 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86cfd11c-f80c-40e7-83cd-ff369bcfe086")
+		(uuid "39ff7b68-4d64-4bf6-bdde-4d18a7934c12")
 	)
 	(wire
 		(pts
-			(xy 142.24 105.41) (xy 142.24 115.57)
+			(xy 87.63 81.28) (xy 87.63 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86dd9cd8-1f87-47a8-932a-109741d83203")
+		(uuid "68acabd8-9f73-4e46-997d-c77e47aaf705")
 	)
 	(wire
 		(pts
-			(xy 74.93 100.33) (xy 93.98 100.33)
+			(xy 87.63 83.82) (xy 102.87 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9cf6c062-f676-474b-bad9-353548ccc84c")
+		(uuid "7442e91b-ca8f-4e87-8aa4-945289ed1baa")
 	)
 	(wire
 		(pts
-			(xy 142.24 115.57) (xy 177.8 115.57)
+			(xy 115.57 104.14) (xy 118.11 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af1a55f1-3985-4753-bb57-b56b19ec3277")
+		(uuid "abb9f7d4-4694-4847-b206-da55bf38ce0f")
 	)
 	(wire
 		(pts
-			(xy 177.8 55.88) (xy 104.14 55.88)
+			(xy 199.39 49.53) (xy 199.39 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be00eaa7-4e24-486e-bed6-8415525fac96")
+		(uuid "d007201e-e1c7-4667-9016-86e66e87efaa")
 	)
 	(wire
 		(pts
-			(xy 132.08 95.25) (xy 119.38 95.25)
+			(xy 97.79 71.12) (xy 102.87 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c02871b5-141d-4db8-b722-195f56615569")
+		(uuid "e3f5074f-203f-4fc8-b4cf-dad9c917c9f5")
 	)
 	(wire
 		(pts
-			(xy 86.36 90.17) (xy 86.36 97.79)
+			(xy 160.02 101.6) (xy 160.02 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7640e72-be86-49cb-b1de-8dab718ea70a")
+		(uuid "f0b7c557-4b94-4396-848c-e40139889541")
 	)
 	(wire
 		(pts
-			(xy 177.8 115.57) (xy 177.8 55.88)
+			(xy 199.39 101.6) (xy 160.02 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d4c171b3-547d-46b8-aef5-9e75ee499064")
+		(uuid "f8042e25-f18b-42d8-ac5d-9f152ecebdd0")
 	)
 	(wire
 		(pts
-			(xy 119.38 85.09) (xy 132.08 85.09)
+			(xy 149.86 92.71) (xy 128.27 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d6392376-7382-47b7-a993-e0e72ea4be42")
-	)
-	(wire
-		(pts
-			(xy 82.55 69.85) (xy 93.98 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3bd0a56-9a1c-4743-83d9-adcf20c80945")
-	)
-	(wire
-		(pts
-			(xy 128.27 81.28) (xy 128.27 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4d7a3f5-7444-4bfa-861a-145725d2c1ea")
-	)
-	(wire
-		(pts
-			(xy 86.36 97.79) (xy 93.98 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6b8e290-00d1-4092-adb4-888dab494aaa")
-	)
-	(wire
-		(pts
-			(xy 82.55 74.93) (xy 93.98 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed07a1f1-7bd3-4651-b96f-b6e74b168c68")
+		(uuid "fc9b73be-ad36-47bf-ac35-cbc03c7c3021")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 132.08 77.47 180)
+		(lib_id "MCU_Module:Arduino_Nano_v3.x")
+		(at 115.57 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1643,333 +1379,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28344f7b-3a94-455d-a0e3-fe2caa564976")
-		(property "Reference" "#PWR02"
-			(at 132.08 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 132.08 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e6faea5d-776a-4d95-9850-c1b18f776344")
-		)
-		(instances
-			(project "servo tester"
-				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 82.55 69.85 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f7cff39-faa3-44b3-a92e-a1affe39b1ec")
-		(property "Reference" "#PWR04"
-			(at 86.36 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SERVO1"
-			(at 78.74 69.8499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc312fa0-f383-4d77-be59-d1c3a337cebd")
-		)
-		(instances
-			(project "servo tester"
-				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 142.24 85.09 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d958f30-adb4-42c0-bafa-25baebb8f8d0")
-		(property "Reference" "#PWR01"
-			(at 142.24 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d5352a81-9dfd-4ce5-949d-3d18ff96fc68")
-		)
-		(instances
-			(project "servo tester"
-				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Display_Graphic:ER_OLEDM0.91_1x-I2C")
-		(at 142.24 95.25 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6042376a-ed39-439f-acc7-23277d88c6d8")
-		(property "Reference" "U1"
-			(at 151.13 96.5201 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ER_OLEDM0.91_1x-I2C"
-			(at 151.13 93.9801 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
-			(at 160.274 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
-			(at 184.912 80.518 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SSD1306 OLED module, 0.91 inch, 128x32, I2C"
-			(at 168.91 78.486 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "91a69804-a24a-4677-bdb8-a8a9b816b8fb")
-		)
-		(pin "3"
-			(uuid "d343914c-d88a-40ef-8655-fc6a2e2cdae4")
-		)
-		(pin "1"
-			(uuid "19bfd347-c9f7-4982-99a3-9bf840a45262")
-		)
-		(pin "4"
-			(uuid "d36854d5-fb51-4f53-8e63-aae500df679a")
-		)
-		(instances
-			(project "servo tester"
-				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MCU_Module:Arduino_UNO_R2")
-		(at 106.68 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c43a05e-e95f-40c7-910c-f1c2f7789a32")
+		(uuid "078382e7-e204-48ee-844d-1ad33e2b79cc")
 		(property "Reference" "A1"
-			(at 113.9033 54.61 0)
+			(at 109.728 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1979,8 +1391,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Arduino_UNO_R2"
-			(at 113.9033 57.15 0)
+		(property "Value" "Arduino_Nano_v3.x"
+			(at 109.728 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1990,8 +1402,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Arduino_UNO_R2"
-			(at 106.68 82.55 0)
+		(property "Footprint" "Module:Arduino_Nano"
+			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2002,8 +1414,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.arduino.cc/en/Main/arduinoBoardUno"
-			(at 106.68 82.55 0)
+		(property "Datasheet" "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf"
+			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2013,8 +1425,8 @@
 				)
 			)
 		)
-		(property "Description" "Arduino UNO Microcontroller Module, release 2"
-			(at 106.68 82.55 0)
+		(property "Description" "Arduino Nano v3.x"
+			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2023,96 +1435,96 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "3f44a72a-14d1-49f4-a19a-b61f1efbfe19")
-		)
-		(pin "13"
-			(uuid "3e2fa936-2849-497b-b724-210eb049d8f1")
-		)
-		(pin "19"
-			(uuid "7b105a43-d2e7-4d7e-a196-15d7d3470000")
-		)
-		(pin "6"
-			(uuid "95961406-f308-4b30-b5ef-48c0fea87098")
-		)
-		(pin "20"
-			(uuid "77f4d290-8fe5-41ef-b346-0c3b057434e7")
-		)
-		(pin "5"
-			(uuid "bbbee2f3-d528-47cc-b0d6-8706758761f7")
-		)
-		(pin "10"
-			(uuid "dd634542-f4ed-44d4-8bb5-d992300151d2")
 		)
 		(pin "15"
-			(uuid "9670125d-b810-406c-90cf-40e8200c733c")
-		)
-		(pin "29"
-			(uuid "5669640f-bb8b-4769-8dbc-73dcaa6b9861")
-		)
-		(pin "8"
-			(uuid "7af46a8b-452d-4589-af24-a242a8e298c0")
-		)
-		(pin "3"
-			(uuid "bb1116b1-f427-40b4-a1c9-da541a3a8bc0")
-		)
-		(pin "2"
-			(uuid "410c1965-9d98-4820-9369-0abf3193e90c")
-		)
-		(pin "9"
-			(uuid "15c24555-3342-47c5-af14-365e3ee891ad")
-		)
-		(pin "11"
-			(uuid "e0d22de6-05c7-4de5-9ee9-d748c4ac88b3")
-		)
-		(pin "7"
-			(uuid "02d6d86a-a5e4-41de-8409-005e3496c551")
-		)
-		(pin "4"
-			(uuid "973493aa-e01b-4f14-aa25-2ca419d49d56")
-		)
-		(pin "14"
-			(uuid "62094e82-36df-4137-81cb-d605deacbb3c")
-		)
-		(pin "12"
-			(uuid "8e6dcde9-344e-49d4-8ffb-3ea67e7e2676")
-		)
-		(pin "17"
-			(uuid "ed730718-b57c-4748-a58e-cfb23c1c8d83")
-		)
-		(pin "16"
-			(uuid "b93643ea-87c8-4b14-9c60-1f8cabbf7dcd")
+			(uuid "911ffffd-8947-4cf1-9b3c-40d246b3fb89")
 		)
 		(pin "18"
-			(uuid "b64061f5-b333-4f27-a5aa-d7ef2cc6dc1b")
+			(uuid "b288f107-0000-4803-8ef9-e8415b564282")
+		)
+		(pin "20"
+			(uuid "b9e682a7-3e77-4793-9ecf-7ec04e9fa3b6")
+		)
+		(pin "9"
+			(uuid "3d8056fc-40fc-43be-84bc-7cd1b3273ec6")
+		)
+		(pin "4"
+			(uuid "53e9ebdb-2a55-414a-9d39-ca05a52ea9be")
+		)
+		(pin "11"
+			(uuid "62ab3a06-6872-43e0-85a5-b3707d24689a")
+		)
+		(pin "12"
+			(uuid "e37e870f-04b6-4667-934a-6ce4b45dc137")
+		)
+		(pin "7"
+			(uuid "c68ef1ec-9365-48e9-bef2-a4e6de1aabc8")
+		)
+		(pin "13"
+			(uuid "5ad9ce99-4eeb-43d4-a600-e8ed28a9e6e1")
+		)
+		(pin "1"
+			(uuid "c414be1a-15d4-45b7-a8ce-78e1de0fe2dd")
+		)
+		(pin "2"
+			(uuid "e75b9854-36f8-4171-8aa8-2e6f6b13fc24")
+		)
+		(pin "5"
+			(uuid "23d630f1-c250-427b-8d42-905789e26123")
+		)
+		(pin "6"
+			(uuid "d096c83b-cbd7-43b5-a7ab-46431f5ea3cf")
+		)
+		(pin "8"
+			(uuid "7c90ffd5-f55f-4183-a243-8ea623e480c7")
+		)
+		(pin "10"
+			(uuid "8e5c22ec-ff1e-4c2f-9c9f-1ca421d67006")
+		)
+		(pin "14"
+			(uuid "7ac23a40-967a-40f4-933a-2724a3f55472")
+		)
+		(pin "16"
+			(uuid "c4fd51d3-704f-4681-b069-253308bb02d0")
+		)
+		(pin "3"
+			(uuid "0b40b3f1-c855-4e2b-b61d-bfb30a022153")
+		)
+		(pin "17"
+			(uuid "3630cdf7-2460-4c77-9212-a11de9464547")
+		)
+		(pin "19"
+			(uuid "77e7ea24-5b28-48c1-b52f-276c0184c9d2")
+		)
+		(pin "29"
+			(uuid "2fd2431f-9c8a-42e9-b4c7-ed1dfea0ef07")
 		)
 		(pin "22"
-			(uuid "fdde8fc9-7b25-44c8-920c-f23467beb8b5")
-		)
-		(pin "23"
-			(uuid "465907f7-32ae-456f-9fd2-43772a9412af")
-		)
-		(pin "25"
-			(uuid "9be6afe2-7854-4339-bcb0-1440ede4b02f")
-		)
-		(pin "21"
-			(uuid "2a812007-1fa5-4112-a63d-fb4593813153")
-		)
-		(pin "26"
-			(uuid "87ad82bf-63fb-434b-bd92-f11c74d2bebf")
+			(uuid "4ade6234-5379-4f32-aa70-2ddebfc23dc1")
 		)
 		(pin "27"
-			(uuid "47eb42d4-d26f-4a88-be7d-6ec1b6995d62")
+			(uuid "0ca0f061-726a-4714-b8b0-3e90a96265f8")
 		)
-		(pin "24"
-			(uuid "1213b706-56cf-4871-a5ac-e696b975f662")
+		(pin "21"
+			(uuid "ef867241-60df-4a03-8be0-b986e2c1df8d")
 		)
-		(pin "28"
-			(uuid "d4e94b4b-df8b-41aa-849d-c1882ed77d64")
+		(pin "25"
+			(uuid "ed271f8c-3788-4a4e-b2fe-83ba0b6ba3be")
 		)
 		(pin "30"
-			(uuid "824f10cf-2976-431c-915a-cf38952456ac")
+			(uuid "6874b211-489e-4ae1-98ae-32d5d727e9f1")
+		)
+		(pin "23"
+			(uuid "800c50f4-c0b0-440b-a061-f027e480f55a")
+		)
+		(pin "24"
+			(uuid "d5614bf7-7055-42c6-bf2d-4d94420de064")
+		)
+		(pin "28"
+			(uuid "2ced030a-e149-48e7-810e-96ba4d6974dd")
+		)
+		(pin "26"
+			(uuid "ec7f2ae9-3b2d-4fc5-a97b-9f19921828a6")
 		)
 		(instances
 			(project "servo tester"
@@ -2124,8 +1536,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 82.55 72.39 90)
+		(lib_id "Connector:TestPoint")
+		(at 128.27 96.52 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2133,21 +1545,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73320c53-013f-4c5b-9564-4803b70f4536")
-		(property "Reference" "#PWR05"
-			(at 86.36 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SERVO2"
-			(at 78.74 72.3899 90)
+		(uuid "09384dc1-7d22-4121-958e-679f4b015b84")
+		(property "Reference" "P_HIGH1"
+			(at 132.842 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2157,8 +1557,19 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 82.55 72.39 0)
+		(property "Value" "TestPoint"
+			(at 136.906 96.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 128.27 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2169,7 +1580,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 72.39 0)
+			(at 128.27 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2179,8 +1590,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 72.39 0)
+		(property "Description" "test point"
+			(at 128.27 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2191,20 +1602,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "3608eb30-e3c4-41c3-a723-4c50a210e28b")
+			(uuid "fbfaf8a6-a137-4af9-82f8-05520a539b1c")
 		)
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "#PWR05")
+					(reference "P_HIGH1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 82.55 74.93 90)
+		(lib_id "Connector:TestPoint")
+		(at 113.03 43.18 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2213,31 +1624,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "aa65f88e-59d5-47ca-a822-9459b6442d66")
-		(property "Reference" "#PWR06"
-			(at 86.36 74.93 0)
-			(hide yes)
+		(uuid "09d5473e-cbb0-4661-bbf6-42d236cdef41")
+		(property "Reference" "main1"
+			(at 115.57 45.2119 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "SERVO3"
-			(at 78.74 74.9299 90)
+		(property "Value" "TestPoint"
+			(at 115.57 47.7519 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 82.55 74.93 0)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2248,7 +1659,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 74.93 0)
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2258,8 +1669,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 74.93 0)
+		(property "Description" "test point"
+			(at 113.03 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2270,20 +1681,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "29b4be97-3f67-4db5-afaf-b355134c9f54")
+			(uuid "8681bb17-92a9-405c-a48d-3cb80233cab0")
 		)
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "#PWR06")
+					(reference "main1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 104.14 50.8 90)
+		(lib_id "Connector:TestPoint")
+		(at 128.27 93.98 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2291,32 +1702,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b7920e77-0e53-4eda-9ad1-52ad8b1094b3")
-		(property "Reference" "MainON/OFF1"
-			(at 105.41 49.5299 90)
+		(uuid "170a4cc4-558f-49ef-ad1a-63aaaf4b2848")
+		(property "Reference" "P_RESIS1"
+			(at 132.842 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 105.41 52.0699 90)
+		(property "Value" "TestPoint"
+			(at 136.906 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H13mm"
-			(at 99.06 50.8 0)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 128.27 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2327,7 +1737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 50.8 0)
+			(at 128.27 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2337,8 +1747,324 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 104.14 50.8 0)
+		(property "Description" "test point"
+			(at 128.27 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ffe1dd82-2500-4bc0-9be7-8603f51cbb1e")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "P_RESIS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 101.6 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "423c9708-d6f1-426e-bdf0-203492f15923")
+		(property "Reference" "#PWR01"
+			(at 125.73 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 101.5999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de9aacf7-f85d-4ab6-9278-92099f512f44")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 88.9 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c941289-c757-437b-97f4-083f7476a9d3")
+		(property "Reference" "SDA2"
+			(at 133.35 87.6299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 90.1699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 128.27 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a9ea456-7f7c-4bac-ba83-461931e2adbf")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "SDA2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fa6d3a0-7c28-453a-a911-78c637d5152a")
+		(property "Reference" "B+1"
+			(at 115.57 38.6079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 115.57 41.1479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 118.11 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f00a5f3-aafc-4ee4-812e-7a7a4dcb8255")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "B+1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Display_Graphic:ER_OLEDM0.91_1x-I2C")
+		(at 160.02 90.17 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "579985a5-97c0-4bdd-b5f0-5f7a721e5944")
+		(property "Reference" "U1"
+			(at 168.91 91.4401 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ER_OLEDM0.91_1x-I2C"
+			(at 168.91 88.9001 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
+			(at 178.054 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
+			(at 202.692 75.438 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SSD1306 OLED module, 0.91 inch, 128x32, I2C"
+			(at 186.69 73.406 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2349,215 +2075,648 @@
 			)
 		)
 		(pin "2"
-			(uuid "d2c6c1ea-29bf-4715-bbed-4cd2949d38e9")
+			(uuid "03bc49ef-7c5e-4990-8545-a0def6c5f968")
 		)
 		(pin "1"
-			(uuid "668c03a9-8e35-444c-be32-2d8e9208a071")
+			(uuid "fac08add-4650-4c1c-99ce-298ec773105e")
 		)
-		(instances
-			(project "servo tester"
-				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "MainON/OFF1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 74.93 95.25 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c94181e5-0f7c-41c3-8a2b-501e60214264")
-		(property "Reference" "SweepMode1"
-			(at 76.2 93.9799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 76.2 96.5199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H13mm"
-			(at 69.85 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 74.93 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "bc44adc4-dafa-44ba-9048-5c621c4b7871")
-		)
-		(pin "1"
-			(uuid "c303689b-a93b-4e00-b219-9a456359736a")
-		)
-		(instances
-			(project "servo tester"
-				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "SweepMode1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 132.08 81.28 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebe09f40-4fa8-47a1-b6e6-c2194500d58f")
-		(property "Reference" "RV1"
-			(at 134.62 80.0099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "R_Potentiometer"
-			(at 134.62 82.5499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Potentiometer"
-			(at 132.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 132.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "POT"
-			(at 132.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-			(at 132.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "4"
+			(uuid "fc0fc2ee-e2bc-48dd-9333-077e3a734232")
 		)
 		(pin "3"
-			(uuid "c5113845-45b1-4c50-8841-c9269c083662")
-		)
-		(pin "2"
-			(uuid "7be09922-9148-48f0-b347-50268b95d5ee")
-		)
-		(pin "1"
-			(uuid "e4092a27-0f73-40aa-a636-c9bb331750c0")
+			(uuid "5b7b90df-318b-4ae3-a915-cda10de5c5fb")
 		)
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "RV1")
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 92.71 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f587303-aaab-426b-ae03-53566716eae7")
+		(property "Reference" "SWEEPMODE1"
+			(at 92.456 77.978 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 91.44 84.582 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 92.71 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 92.71 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "99f43a2a-85f3-47f2-a799-7f4c80f358b5")
+		)
+		(pin "1"
+			(uuid "d2fd119b-b990-470e-882e-71177cb7b221")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "SWEEPMODE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 149.86 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "818458f7-61a9-40ae-936b-e89961e97093")
+		(property "Reference" "SDA1"
+			(at 146.558 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 146.558 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 149.86 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 149.86 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da3556e9-c5bc-4e25-9273-54e8cf7ad790")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "SDA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 115.57 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a421bcf-26b8-4884-bdac-be61cdc749e0")
+		(property "Reference" "#PWR03"
+			(at 115.57 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2a2a05d1-1952-459d-b967-e09a39d8942a")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 132.08 101.6 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cbe69bda-8a69-4cf7-85ac-7ae781d5aa32")
+		(property "Reference" "P_GND1"
+			(at 136.652 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 140.716 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 132.08 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f7d6d81-05e7-46c3-ab18-2ff5fcb124e9")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "P_GND1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 80.01 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf4e8adb-ca9b-4dd1-ad1d-427f07614783")
+		(property "Reference" "#PWR02"
+			(at 160.02 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1dbdd2f5-0787-45e5-90ba-64a2adcb205a")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 118.11 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d65ecaef-3619-4fd0-be03-6c4ecf6a9cb7")
+		(property "Reference" "B-1"
+			(at 120.142 104.394 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 120.142 106.934 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 113.03 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 118.11 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5892917f-2575-4862-b39b-bcf8f4eb1571")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "B-1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 92.71 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2ffbfd2-40b1-4687-830b-aee183009a39")
+		(property "Reference" "SW2"
+			(at 92.71 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 92.71 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 92.71 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 92.71 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c6f770a3-be02-4d87-95fd-bc76d4c92880")
+		)
+		(pin "1"
+			(uuid "6a8aa85a-5615-4379-90f4-5b4b58c5211b")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f43faa54-f7b7-43c6-9c3c-4e9b9e899761")
+		(property "Reference" "TPmain2"
+			(at 115.57 48.7679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 115.57 51.3079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm"
+			(at 118.11 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "879e75bb-87e3-4a57-a537-5aa35bc05364")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "TPmain2")
 					(unit 1)
 				)
 			)
