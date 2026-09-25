@@ -1765,10 +1765,40 @@
 		(uuid "273febc8-9d79-44df-8127-262ff82602c9")
 	)
 	(junction
+		(at 81.28 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29d569fc-134b-4a88-acfc-6967ec863e3f")
+	)
+	(junction
+		(at 73.66 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6630aefd-52f8-479b-b3d0-5637fc05b28a")
+	)
+	(junction
 		(at 123.19 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b5eae69-6b45-414b-a6ea-39b492e804d3")
+	)
+	(junction
+		(at 76.2 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3440185-06d9-4cdd-b023-440bcbdba43f")
+	)
+	(junction
+		(at 77.47 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd83ba3f-d99b-4235-8b92-5720a19af00c")
+	)
+	(junction
+		(at 72.39 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efc9ff4a-ec63-4759-936c-418f05553d48")
 	)
 	(junction
 		(at 106.68 77.47)
@@ -1884,6 +1914,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 92.71) (xy 77.47 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fc014f8-099e-4342-ba39-90934457e380")
+	)
+	(wire
+		(pts
 			(xy 143.51 77.47) (xy 135.89 77.47)
 		)
 		(stroke
@@ -1911,6 +1951,16 @@
 			(type default)
 		)
 		(uuid "88ff9cc9-ee86-4c15-83a5-71441738e591")
+	)
+	(wire
+		(pts
+			(xy 66.04 92.71) (xy 73.66 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "893b9290-0662-41eb-ad7a-37e551222afb")
 	)
 	(wire
 		(pts
@@ -1954,6 +2004,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 118.11) (xy 72.39 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2d35180-6ba0-4863-983f-b111edb95916")
+	)
+	(wire
+		(pts
 			(xy 123.19 90.17) (xy 125.73 90.17)
 		)
 		(stroke
@@ -1991,6 +2051,16 @@
 			(type default)
 		)
 		(uuid "dfdd1c01-8576-44c6-bf99-5a9b387840db")
+	)
+	(wire
+		(pts
+			(xy 77.47 92.71) (xy 81.28 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3499460-f210-4422-a613-3c1afad08317")
 	)
 	(wire
 		(pts
@@ -2041,6 +2111,105 @@
 			(type default)
 		)
 		(uuid "f8f82298-4ce8-488c-978d-50fd65a988a5")
+	)
+	(wire
+		(pts
+			(xy 76.2 118.11) (xy 80.01 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe89d38d-4fdf-43ba-a89d-e3a6a94d9d0c")
+	)
+	(wire
+		(pts
+			(xy 72.39 118.11) (xy 76.2 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff875eb4-c76a-412a-8fed-70e070f176e1")
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 58.42 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1a070bb9-799c-456f-b481-03ce181c1c4e")
+		(property "Reference" "SB-VCC1"
+			(at 56.642 113.792 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 54.356 109.982 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 58.42 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 58.42 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bdcafc6-3244-4999-a569-f0ecfc771fcb")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "SB-VCC1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -2195,6 +2364,85 @@
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
 					(reference "+B1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 72.39 123.19 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "270b3578-cdf7-4178-8f26-9643ef2b9aff")
+		(property "Reference" "S3-P1"
+			(at 68.072 124.968 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 64.262 127.254 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 72.39 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 72.39 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efea960a-2bd9-4b10-a5b7-e88496a1c74f")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "S3-P1")
 					(unit 1)
 				)
 			)
@@ -2366,8 +2614,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4286af87-70c6-40eb-8da0-78e03fbddde7")
-		(property "Reference" "S2"
-			(at 101.6 100.838 90)
+		(property "Reference" "S2-S1"
+			(at 100.076 100.838 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2428,7 +2676,7 @@
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "S2")
+					(reference "S2-S1")
 					(unit 1)
 				)
 			)
@@ -2531,6 +2779,85 @@
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 76.2 123.19 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "53c7a4b4-9113-4775-a5e0-dfe28d5a8056")
+		(property "Reference" "S2-P1"
+			(at 73.406 124.968 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 69.342 124.968 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 76.2 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 76.2 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b3d6283-6293-4468-bf49-635f00bd7abb")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "S2-P1")
 					(unit 1)
 				)
 			)
@@ -2739,6 +3066,163 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 77.47 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d04aff1-b973-4e97-abdd-5e3f7e94ff85")
+		(property "Reference" "#PWR06"
+			(at 77.47 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3033ab73-17a7-4494-8d58-25a171887128")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 80.01 123.19 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7b158c68-91a0-4ec6-8cb9-8b6cf98b6c29")
+		(property "Reference" "S1-P1"
+			(at 78.74 124.968 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 80.518 127.254 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 80.01 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 80.01 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1087b8f2-782c-4581-aa1a-77ce45cff66e")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "S1-P1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 106.68 99.06 90)
 		(unit 1)
@@ -2749,7 +3233,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7ecfa980-ff56-499d-8f57-e48777250c7d")
-		(property "Reference" "S1"
+		(property "Reference" "S1-S1"
 			(at 105.41 100.838 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2811,7 +3295,7 @@
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "S1")
+					(reference "S1-S1")
 					(unit 1)
 				)
 			)
@@ -2828,8 +3312,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f7ebb72-79b7-4f5b-a363-16ceaecfc72d")
-		(property "Reference" "S3"
-			(at 97.79 100.838 90)
+		(property "Reference" "S3-S1"
+			(at 94.742 100.838 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2890,7 +3374,7 @@
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "S3")
+					(reference "S3-S1")
 					(unit 1)
 				)
 			)
@@ -3064,6 +3548,163 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 77.47 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "99f216b0-4910-4a84-a2d2-198f94665b50")
+		(property "Reference" "S2-G1"
+			(at 74.676 99.568 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 70.612 99.568 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 77.47 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 77.47 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a6ed0b1-6692-446c-9639-0c51c0b2f3c0")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "S2-G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc42d1e9-bae1-4561-a478-9365f100120e")
+		(property "Reference" "#PWR07"
+			(at 81.28 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf3f5da2-3268-4265-ba46-e8a562fa70cd")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 92.71 57.15 0)
 		(unit 1)
@@ -3138,6 +3779,163 @@
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
 					(reference "SWEEP_TOGGLE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 60.96 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c86485f1-2873-4b54-b792-f65210f55cf5")
+		(property "Reference" "SB-GND1"
+			(at 59.182 89.916 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 59.182 85.852 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 60.96 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 60.96 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "085cbc71-8e97-4e2d-88ad-c28749e8e567")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "SB-GND1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 73.66 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0203e10-b217-4b50-84f1-ce59a3b909eb")
+		(property "Reference" "#PWR05"
+			(at 73.66 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 73.66 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54417ac6-ed2e-4b3c-abb5-bb64c839687b")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3324,6 +4122,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 73.66 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e5379f1f-1c30-4a1e-a80d-89e43f0e690c")
+		(property "Reference" "S3-G1"
+			(at 69.342 99.568 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 65.532 101.854 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 73.66 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 73.66 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2757c31-abfd-435f-8480-ec42ee6cff65")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "S3-G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Display_Graphic:ER_OLEDM0.91_1x-I2C")
 		(at 154.94 77.47 0)
 		(unit 1)
@@ -3406,6 +4283,85 @@
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 81.28 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3f9c5f6-898f-4e6d-9c4c-6a9deb37d8ea")
+		(property "Reference" "S1-G1"
+			(at 80.01 99.568 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 81.788 101.854 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+			(at 81.28 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 81.28 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3099876c-91b2-4e61-aa99-c0151b076695")
+		)
+		(instances
+			(project "servo tester"
+				(path "/83297660-975c-4234-8058-51e6fbb67663"
+					(reference "S1-G1")
 					(unit 1)
 				)
 			)
