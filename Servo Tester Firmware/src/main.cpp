@@ -553,7 +553,14 @@ void loop()
   }
 
   // Manages Controlling of servos
-  if (mode == calibration)
+  if(reset_pressed){
+    display.setCursor(0,0);
+    display.setTextSize(4);
+    display.println("RESET");
+    display.display();
+  }
+  else{
+    if (mode == calibration)
   {
     display.println("MODE: CALIBRATION");
     display.setTextWrap(true);
@@ -598,5 +605,6 @@ void loop()
     delayMicroseconds(1000 + at);
     digitalWrite(11, LOW);
     delay(50 * (1 - pot));
+  }
   }
 }
