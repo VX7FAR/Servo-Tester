@@ -3715,7 +3715,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c50d57b2-6406-42c0-a7f1-c541b106d0f2")
-		(property "Reference" "SWEEP_TOGGLE1"
+		(property "Reference" "MODE1"
 			(at 93.218 54.356 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3778,7 +3778,7 @@
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "SWEEP_TOGGLE1")
+					(reference "MODE1")
 					(unit 1)
 				)
 			)
@@ -4378,7 +4378,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f45265c1-1478-47ca-ae30-0deb94a12930")
-		(property "Reference" "SW3"
+		(property "Reference" "RESET1"
 			(at 92.71 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4441,7 +4441,7 @@
 		(instances
 			(project "servo tester"
 				(path "/83297660-975c-4234-8058-51e6fbb67663"
-					(reference "SW3")
+					(reference "RESET1")
 					(unit 1)
 				)
 			)

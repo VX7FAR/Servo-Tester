@@ -4,7 +4,7 @@ A servo tester is basically a device someone can use to check whether their serv
 Most of the servo need 1ms to 2ms pulse so that it moves from 0 to 180 degrees respectively.
 
 Here is a Exploded View of servo tester:
-![SERVO TESTER EXPLODED VIEW](assets/render.PNG)
+![SERVO TESTER EXPLODED VIEW](assets/exploded%20vieww.PNG)
 
 ## WORKING / SCHEMATIC
 
@@ -19,4 +19,3 @@ It also has two buttons one is for resetting to original position and other is f
 - Calibration : I added this mode because if someone chose to have a different kind of potentiometer then the readings may become incorrect, which is why in calibration mode you can make your servo tester adapt to your potentiometer. In this the potentiometer is used for setting the maximum and minimum position.
 It can be selected by pressing the two buttons simultaneously.
 - RESET : In this the servo moves to the initial position and stays like that.
-To exit it you need to press the reset button again.

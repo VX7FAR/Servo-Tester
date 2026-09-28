@@ -29,7 +29,7 @@ size_t servopin = 11;
 
 float increment = 5.55f;
 
-bool sweep = false; 
+bool sweep = false;         //This refers to the mode button  
 uint8_t sweep_pin = 3;
 bool reset = false; 
 uint8_t reset_pin = 7;
