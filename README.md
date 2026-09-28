@@ -3,8 +3,11 @@
 A servo tester is basically a device someone can use to check whether their servo motors work or not and this can be very essential as it can help you to check your servo motors before having to write new code just to run a single servo.
 Most of the servo need 1ms to 2ms pulse so that it moves from 0 to 180 degrees respectively.
 
-Here is a Exploded View of servo tester:
-![SERVO TESTER EXPLODED VIEW](assets/PREVIEW.PNG)
+Here is a normal view of servo tester:
+![SERVO TESTER NORMAL VIEW](assets/PREVIEW.PNG)
+
+Exploded View:
+![SERVO TESTER EXPLODED VIEW](assets/exploded%20vieww.PNG)
 
 ## WORKING / SCHEMATIC
 
@@ -36,3 +39,17 @@ It can be selected by pressing the two buttons simultaneously.
 | Bottom Panel | 1 |
 | 6-12V DC Power Source | 1 |
 | Servo Motor (SG90) | 1 |
+
+## Wiring / Schematic
+An overview of what the PCB is like.
+
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?repo=https://github.com/VX7FAR/Servo-Tester/tree/main/PCB)
+
+Circuit:
+![CIRCUIT](assets/circuit.png)
+
+PCB:
+![PCB TRACES](assets/PCB%20tracing.png)
+
+PCB 3D Model:
+![PCB 3D MODEL](assets/PCB.png)
