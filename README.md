@@ -54,3 +54,7 @@ PCB:
 
 PCB 3D Model:
 ![PCB 3D MODEL](assets/PCB.png)
+
+## Things to keep in mind when using:
+- To run the servos you will have to use an external power source which will be connected on top left of the PCB by two connector pins
+- When running the servo make sure to connect the servo then power them up as there is a direct connection between ground to vcc of servo power source
