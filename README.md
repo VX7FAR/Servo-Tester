@@ -7,6 +7,7 @@ Here is a normal view of servo tester:
 ![SERVO TESTER NORMAL VIEW](assets/PREVIEW.PNG)
 
 Exploded View:
+
 ![SERVO TESTER EXPLODED VIEW](assets/exploded%20vieww.PNG)
 
 ## WORKING / SCHEMATIC
@@ -47,14 +48,24 @@ An overview of what the PCB is like.
 [![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?repo=https://github.com/VX7FAR/Servo-Tester/tree/main/PCB)
 
 Circuit:
+
 ![CIRCUIT](assets/circuit.png)
 
 PCB:
+
 ![PCB TRACES](assets/PCB%20tracing.png)
 
 PCB 3D Model:
+
 ![PCB 3D MODEL](assets/PCB.png)
 
-## Things to keep in mind when using:
+## Things to keep in mind when using the repository:
+- The CAD folder contains CAD model for each part individually as well as step and f3d original files.
+- The firmware was made using platformIO which is a vs code extension so you will have to load the directory where platform.ini file is. If you are using arduino IDE then you can directly copy the code `from src/main.cpp` and header is in `include/animation.h`.
+- The libraries are mainly for controlling the display and they are `Adafruit_SSD1306.h` and `Adafruit_GFX.h`.
+- `PCB` folder contains everything related to PCB like gerber file (`PCB-gerber.zip`), kicad files and also the 3D model of PCB (`servo tester.step`).
+- `assets` folder contains things that are not really important for making the project but I kept them for having a bit easy while working and writing the README. You can freely ignore that folder if you want to.
+
+## Things to keep in mind when using the project:
 - To run the servos you will have to use an external power source which will be connected on top left of the PCB by two connector pins
 - When running the servo make sure to connect the servo then power them up as there is a direct connection between ground to vcc of servo power source
