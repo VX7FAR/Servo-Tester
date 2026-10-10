@@ -41,6 +41,7 @@ It can be selected by pressing the two buttons simultaneously.
 | 6-12V DC Power Source | 1 |
 | Servo Motor (SG90) | 1 |
 | 4x1.5mm magnets | 2 |
+| Diodes | 2 |
 
 ## Wiring / Schematic
 An overview of what the PCB is like.
